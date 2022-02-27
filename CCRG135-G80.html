@@ -1,0 +1,619 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- Updated 5/12/2017 JSB -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="icon" href="https://webdevjoshb.github.io/Genesis-Lifecycle-Communications/img/favicon.ico" type="image/x-icon"/>
+<title>Genesis Connected Services</title>
+
+<style type="text/css">
+@font-face { font-family:"GenesisSansHead-Regular"; src:url("https://webdevjoshb.github.io/assets/fonts/GenesisSansHead-Regular.eot"); src:url("https://webdevjoshb.github.io/assets/fonts/GenesisSansHead-Regular.eot?#iefix") format("embedded-opentype"), url("https://webdevjoshb.github.io/assets/fonts/GenesisSansHead-Regular.woff2") format("woff2"), url("https://webdevjoshb.github.io/assets/fonts/GenesisSansHead-Regular.woff") format("woff"), url("https://webdevjoshb.github.io/assets/fonts/GenesisSansHead-Regular.ttf") format("truetype"); font-weight:normal; font-style:normal; }
+@font-face { font-family:"GenesisSansHead-Light"; src:url("https://webdevjoshb.github.io/assets/fonts/GenesisSansHead-Light.eot"); src:url("https://webdevjoshb.github.io/assets/fonts/GenesisSansHead-Light.eot?#iefix") format("embedded-opentype"), url("https://webdevjoshb.github.io/assets/fonts/GenesisSansHead-Light.woff2") format("woff2"), url("https://webdevjoshb.github.io/assets/fonts/GenesisSansHead-Light.woff") format("woff"), url("https://webdevjoshb.github.io/assets/fonts/GenesisSansHead-Light.ttf") format("truetype"); font-weight:normal; font-style:normal; }
+
+body { width:100% !important; margin:0 auto !important; font-size:100%; -moz-text-size-adjust:100%; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; }
+table, td { border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; }
+img { -ms-interpolation-mode:bicubic; border:0; outline:none; }
+span { font-size:inherit; }
+#tracking img { display:none !important; } /* hide tracking pixels */
+
+/* link handling */
+a, a:visited { color:inherit; font-size:inherit; }
+a:hover { text-decoration:underline !important; }
+#weblink a { text-decoration:none !important; } /* fix for aol */
+#weblink a:hover { text-decoration:underline !important; } /* fix for aol */
+.feature-heading a, .feature-heading a:link, .feature-heading a:visited {text-decoration:none !important; }
+#footer a, #footer a:visited { color:#001f20; }
+a.amazon-link:hover { text-decoration:none !important; cursor:text !important; }
+a img { text-decoration:none !important; border:none; }
+a[href^=tel], a[href^=sms], a:visited[href^=tel], a:visited[href^=sms], a:hover[href^=tel], a:hover[href^=sms], a:active[href^=tel], a:active[href^=sms] { color:#001f20 !important; text-decoration:none !important; }
+a[href^=mail], a:visited[href^=mail] { color:#001f20 !important; }
+a[x-apple-data-detectors=true] { color:inherit !important; text-decoration:inherit !important; } 
+
+/*outlook links visited state fix*/
+span.MsoHyperlink { mso-style-priority:99; color:inherit; }
+span.MsoHyperlinkFollowed { mso-style-priority:99; color:inherit; }
+
+/* hotmail adjustments */ 
+.ExternalClass { width:100% !important; }
+.ExternalClass * { line-height:100%; } 
+
+/* Gmail App Layout hack */
+.gmailFix, .gmailFix img { display:none !important; }
+
+/* emulate crisp/strong settings in photoshop */
+td[style*='#000000'], th[style*='#000000'], td[style*='#000000'] a[style*='#000000'], th[style*='#000000'] a[style*='#000000'], td[style*='#000000'] a[style*='#000000'] span, th[style*='#000000'] a[style*='#000000'] span { opacity:0.9 !important; text-shadow:0 0 1px rgba(0,0,0,0.2) !important; }
+.feature-heading .headline { color:rgba(0,31,32,0.9) !important; }
+td a[style*='#7f4033'], td a[style*='#7f4033'] span, th a[style*='#7f4033'], th a[style*='#7f4033'] span { text-shadow:0 0 1px rgba(127,64,51,0.2) !important; }
+#footer-links span { text-shadow:0 0 1px rgba(0,31,32,0.1) !important; }
+
+/* video thumbnail hover-over effect */
+.video:hover img { filter:brightness(130%); }
+
+/* font-family swap, includes font ratio adjustments for arial fallback */
+/* extra span definitions to fix buggy cascade in some clients */
+[style*='-Regular'] { font-family:GenesisSansHead-Regular,Arial,sans-serif !important; }
+[style*='-Light'] { font-family:GenesisSansHead-Light,Arial,sans-serif !important; }
+.h1[style*='Genesis'], .h1[style*='Genesis'] span { font-size:33px !important; line-height:1.1em !important; text-shadow:0 0 1px rgba(80,81,81,0.2); }
+.h2[style*='Genesis'], .h2[style*='Genesis'] span { font-size:25px !important; text-shadow:0 0 1px rgba(153,51,51,0.2); }
+.h3[style*='Genesis'], .h3[style*='Genesis'] span { font-size:22px !important; }
+.h4[style*='Genesis'], .h4[style*='Genesis'] span { font-size:16px !important; }
+.h5[style*='Genesis'], .h5[style*='Genesis'] span { font-size:18px !important; text-shadow:0 0 1px rgba(172,55,44,0.1); }
+.feature-heading .headline[style*='Genesis'] { font-size:18px !important; }
+.feature-heading .cta[style*='Genesis'] { font-size:13px !important; }
+
+/* mimic vertical align for webfont */
+td[width*='67.5'] { border-top:2px solid #e6d9d6; }
+td[width*='32.5'] { border-top:2px solid #804033; }
+
+/* background gradient, replaces inline background image set as fallback */
+#header .background { background-size:cover; background:linear-gradient(to bottom,#edefef 0%,#ffffff 80%); }
+#footerWrap .background { background-size:cover; background:linear-gradient(to bottom,#ffffff 30%,#e5e8e8 100%); }
+
+/* small displays, smartphone (landscape) */
+/* h1-h5 are fallbacks where CSS [attribute] selector isn't supported */
+/* duplicate font classes fix buggy cascade in some clients */
+@media only screen and (max-width:639px) {
+.wrapper { width:100% !important; min-width:320px; min-width:100vw; } /* min-width fits to viewport width, will cause minor horizontal scroll due to vertical scrollbar */
+.hide4mobile { display:none !important; }
+.block, .block480 { display:block; }
+img { height:auto !important; }
+td, td span, td a, th, th span, th a { font-size:17px !important; line-height:1.4em !important; }
+#weblink a { font-size:11px !important; }
+.headline, .headline span { line-height:1.1em !important; }
+.h1, .h1 span { font-size:27px !important; line-height:1.1em !important; }
+.h1[style*='Genesis'], .h1[style*='Genesis'] span { font-size:30px !important; line-height:1.1em !important; }
+.h2, .h2 span { font-size:24px !important; }
+.h2[style*='Genesis'], .h2[style*='Genesis'] span { font-size:25px !important; }
+.h3, .h3 span { font-size:19px !important; }
+.h4, .h4 span { font-size:17px !important; }
+.h5, .h5 span { font-size:16px !important; }
+#intro .innerPad { padding:9px 0 45px !important; }
+.feature-heading .headline { font-size:19px !important; letter-spacing:0 !important; vertical-align:middle !important; }
+.feature-heading .headline[style*='Genesis'] { font-size:19px !important; letter-spacing:0.06em !important; }
+.feature-heading .cta, .feature-heading .cta a { font-size:15px !important; line-height:110% !important; letter-spacing:0 !important; vertical-align:middle !important; }
+.feature-heading .cta[style*='Genesis'], .feature-heading .cta[style*='Genesis'] a, .feature-heading .cta[style*='Genesis'] span { font-size:15px !important; letter-spacing:0.02em !important; }
+.feature-copy .headline { padding-top:6px !important; font-size:18px !important; }
+#disclaimers td, #disclaimers span, #disclaimers a { font-size:11px !important; }
+#logoWrap .innerPad { padding:15px 0 19px !important; }
+#main-logo img { width:88% !important; max-width:376px; }
+#intro td { padding-right:0 !important; }
+#giftsWrap .innerPad { padding:45px 0 !important; }
+#echoWrap th { display:block !important; width:100% !important; }
+#echoWrap table { width:100% !important; }
+#echoWrap .gift-logo img { margin:0 auto !important; }
+#echoWrap .product img { margin:0 auto !important; }
+.listPad { padding-left:0 !important; }
+.feature-copy .icon { padding-right:20px !important; }
+#aside .pad { padding:40px 0 60px !important; }
+#video img { width:100% !important; }
+#download { max-width:480px; margin:0 auto; }
+#download th { display:block !important; width:100% !important; }
+#download #downloadCopy { padding-top:25px !important; }
+#download img { width:88% !important; max-width:375px; margin:0 auto !important; }
+#download .btn img { width:98% !important; max-width:165px !important; margin:0 !important; }
+#social-media img { width:55px !important; }
+#footer-logo img { width:65% !important; max-width:299px !important; }
+#footer-links th { display:block !important; width:100% !important; padding-right:0 !important; padding-bottom:25px !important; text-align:center !important; }
+#disclaimers .innerWrap { width:91.25% !important; }
+}
+/* smartphone (portrait) */
+/* h1-h5 are fallbacks where CSS [attribute] selector isn't supported */
+/* duplicate font classes fix buggy cascade in some clients */
+@media only screen and (max-width:479px) {
+.block480 { display:inline !important; }
+.hide320 { display:none !important; }
+.h2, .h2 span { font-size:22px !important; }
+.h2[style*='Genesis'], .h2[style*='Genesis'] span { font-size:23px !important; }
+.feature-heading .headline { font-size:17px !important; }
+.feature-heading .headline[style*='Genesis'] { font-size:17.5px !important; }
+.feature-heading .cta, .feature-heading .cta a { font-size:14px !important; }
+.feature-heading .cta[style*='Genesis'], .feature-heading .cta[style*='Genesis'] a { font-size:13px !important; }
+#intro .innerPad { padding:9px 0 40px !important; }
+#gift-items th { display:block !important; width:100% !important; padding:0 !important; }
+#gift-items th#amazon-prime { padding:0 0 30px !important; }
+#gift-items th td { height:auto !important;  }
+.gift-logo { padding-bottom:10px !important; }
+#commands { width:100% !important; }
+.feature-copy .icon { padding:0 0 15px !important; }
+.feature-copy .icon img { margin:0 auto !important; }
+.features th { display:block; width:100% !important; }
+.features th td { text-align:center !important; }
+#download th td { text-align:center !important; }
+#download .btn img { width:93% !important; max-width:160px !important; }
+#social-media img { width:50px !important; }
+#footer-links table { width:100% !important; }
+}
+/* yahoo specific to remove text shadow due to bug on IE */
+@media yahoo {
+.h5 { text-shadow:none !important; }
+#footer-links span { text-shadow:none !important; }
+}
+</style>
+<!--outlook 2000-2016 conditional fixes-->
+<!--[if (gte mso 9)]>
+<style>
+.sup { font-size:100% !important; vertical-align:top !important; }
+</style>
+<![endif]-->
+</head>
+
+<body style="width:100% !important;margin:0 auto !important;padding:0;font-size:100%;">
+
+<!--email preview text-->
+<div style="display:none;font-size:0;line-height:0;max-height:0;max-width:0;opacity:0;overflow:hidden;">
+Find yourself impressed by Genesis ingenuity. The Genesis Connected Services Remote Package offers the ability to use your smartphone to guide you to your car. No more forgetting where you parked. No more pressing the key fob over and over. Genesis Connected Services Car Finder helps you locate your Genesis G80 quickly and easily no matter how long your day has been.
+</div><!--/email preview text-->
+
+<!--#header .wrapper-->
+<table role="presentation" width="640" align="center" cellpadding="0" cellspacing="0" id="header" class="wrapper" style="margin:0 auto;">
+<tr><td valign="top" background="https://webdevjoshb.github.io/Genesis-Lifecycle-Communications/img/bg-header.jpg" class="background" style="font-size:0;line-height:0;">
+<!--[if gte mso 9]>
+	<v:image xmlns:v="urn:schemas-microsoft-com:vml" id="theImage" style="behavior:url(#default#VML);position:absolute;width:640px;height:435px;top:0;left:0;z-index:-1" src="https://webdevjoshb.github.io/Genesis-Lifecycle-Communications/img/bg-header.jpg"/>
+<![endif]-->
+
+	<!--#logoWrap // 100% so bottom border extends 640px-->
+	<table role="presentation" width="100%" cellpadding="0" cellspacing="0" id="logoWrap">
+	<tr><td class="innerPad" style="padding:26px 0;border-bottom:1px solid #804033;">
+
+		<!--#main-logo .innerWrap-->
+		<table role="presentation" width="93%" align="center" cellpadding="0" cellspacing="0" id="main-logo" class="innerWrap" style="margin:0 auto;">
+		<tr><td>
+			<a href="http://www.genesismotorsusa.com" target="_blank"><img src="https://webdevjoshb.github.io/Genesis-Lifecycle-Communications/img/logo-Genesis-Connected-Services.png" srcset="https://webdevjoshb.github.io/Genesis-Lifecycle-Communications/img/logo-Genesis-Connected-Services-2x.png 2x" width="374" height="48" alt="[LOGO] Genesis Connected Services" border="0" style="display:block;color:#000000;"/></a>
+		</td></tr>
+ 		</table><!--/#main-logo .innerWrap-->
+
+	</td></tr>
+	</table><!--/#logoWrap-->
+
+	<!--#intro .innerWrap-->
+	<table role="presentation" width="91.25%" align="center" cellpadding="0" cellspacing="0" id="intro" class="innerWrap" style="margin:0 auto;">
+	<tr><td class="innerPad" style="padding:11px 0 50px;">
+
+		<table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+		<tr><td align="right" id="weblink" style="padding:0 0 10px;font-family:Arial,sans-serif;font-size:10px;line-height:normal;">
+           	<a href="%%view_email_url%%" target="_blank" style="color:#858e8e;text-decoration:none;">Web version</a>                                
+		</td></tr>
+		<tr><td class="headline h1" style="padding:0 0 15px;color:#505151;font-family:Arial,sans-serif,'GenesisSansHead-Light';font-size:27px;line-height:32px;letter-spacing:-0.02em;">
+			FIND YOURSELF IMPRESSED <br class="hide4mobile"/>BY GENESIS&nbsp;INGENUITY
+		</td></tr>
+		<tr><td style="padding:0 10px 28px 0;color:#000000;font-family:Arial,sans-serif;font-size:14px;line-height:20px;">
+			The Genesis Connected Services Remote Package offers the ability to use your smartphone to guide you to your car. No more forgetting where you parked. No more pressing the key fob over and over. Genesis Connected Services Car Finder helps you locate your Genesis&nbsp;G80 quickly and easily no matter how long your day has&nbsp;been.
+		</td></tr>
+		<tr><td>
+			<!--call to action: .btn explore-->
+			<a href="http://www.genesismotorsusa.com" target="_blank"><img src="https://webdevjoshb.github.io/Genesis-Lifecycle-Communications/img/btn-Explore.jpg" srcset="https://webdevjoshb.github.io/Genesis-Lifecycle-Communications/img/btn-Explore-2x.jpg 2x" width="83" height="32" alt="[BUTTON] Explore" border="0" class="btn" style="display:block;color:#001f20;font-size:10px;"/></a>
+		</td></tr>
+		</table>
+
+	</td></tr>
+	</table><!--/#intro .innerWrap-->
+
+</td></tr>
+</table><!--/#header .wrapper-->
+
+<!--#banner .wrapper-->
+<table role="presentation" width="640" align="center" cellpadding="0" cellspacing="0" id="banner" class="wrapper" style="margin:0 auto;">
+<tr><td>
+	<img src="https://webdevjoshb.github.io/Genesis-Lifecycle-Communications/img/banner-CCRG135-G80.jpg" width="640" height="268" alt="[BANNER] Interior view of Genesis G80." class="wrapper" style="display:block;color:#001f20;"/>
+</td></tr>
+</table><!--/#banner .wrapper-->
+
+<!--#feature-remote guidance .wrapper-->
+<table role="presentation" width="640" align="center" cellpadding="0" cellspacing="0" id="feature-remote" class="wrapper" style="margin:0 auto;">
+<tr><td class="pad">
+
+	<!--.feature-heading-->
+	<table role="presentation" bgcolor="#e6d9d6" width="100%" cellpadding="0" cellspacing="0" class="feature-heading">
+	<tr>
+		<!--top border to help vertically align web font text-->
+		<td width="67.5%" style="vertical-align:middle;">
+
+			<table role="presentation" width="87.25%" align="center" cellpadding="0" cellspacing="0" style="margin:0 auto;">
+			<tr><td height="58" class="headline" style="color:#001f20;font-family:Arial,sans-serif,'GenesisSansHead-Regular';font-size:17px;line-height:normal;letter-spacing:0.06em;vertical-align:middle;">
+				REMOTE &amp; GUIDANCE&nbsp;FEATURES
+			</td></tr>
+			</table>
+
+		</td>
+		<!--top border to help vertically align web font text-->
+		<td bgcolor="#804033" width="32.5%" style="vertical-align:middle;">
+			
+			<table role="presentation" width="88%" align="center" cellpadding="0" cellspacing="0" style="margin:0 auto;">
+			<tr><td height="58" align="center" class="cta" style="color:#ffffff;font-family:Arial,sans-serif,'GenesisSansHead-Regular';font-size:12px;line-height:normal;letter-spacing:0.02em;vertical-align:middle;">
+				<a href="http://www.genesismotorsusa.com/owners" target="_blank" style="color:#ffffff;text-decoration:none;">DISCOVER<span class="hide320" style="text-decoration:none;"> MORE</span></a>&nbsp;►
+			</td></tr>
+			</table>
+
+		</td>
+	</tr>
+	</table><!--/.feature-heading-->
+
+	<!--.feature-copy-->
+	<table role="presentation" width="100%" cellpadding="0" cellspacing="0" class="feature-copy">
+	<tr><td class="innerPad" style="padding:50px 0 15px;">
+
+		<!--.innerWrap .features-->
+		<table role="presentation" width="91.25%" align="center" cellpadding="0" cellspacing="0" class="innerWrap features" style="margin:0 auto;">
+		<tr>
+			<th class="icon" style="padding:0 30px 45px 0;font-weight:normal;vertical-align:top;"><img src="https://webdevjoshb.github.io/Genesis-Lifecycle-Communications/img/icon-Car-Finder.jpg" width="93" height="93" alt="[ICON] Car Finder feature" style="display:block;color:#001f20;font-size:10px;"/></th>
+			<th style="padding:0 0 45px;font-weight:normal;text-align:left;vertical-align:top;">
+				
+				<!--description of feature-->
+				<table role="presentation" width="100%" cellpadding="0" cellspacing="0" class="feature-desc">
+				<tr><td class="headline" style="padding:10px 0 6px;color:#000000;font-family:Arial,sans-serif;font-size:16px;line-height:normal;letter-spacing:0.02em;">
+					CAR FINDER<a href="http://genesis.aurorasuite.com/disclaimer/gldp.html#paragraph" target="_blank" style="color:#000000;text-decoration:underline;"><sup class="sup" style="font-size:75%;line-height:0;letter-spacing:0;">&para;</sup></a>
+				</td></tr>
+				<tr><td style="color:#000000;font-family:Arial,sans-serif;font-size:14px;line-height:20px;">
+					Use your Genesis Intelligent Assistant app to quickly locate your G80 on the map or tag its location for future&nbsp;reference.
+				</td></tr>
+				</table><!--/.feature-desc-->
+
+			</th>
+		</tr>
+		<tr>
+			<th class="icon" style="padding:0 30px 45px 0;font-weight:normal;vertical-align:top;"><img src="https://webdevjoshb.github.io/Genesis-Lifecycle-Communications/img/icon-Remote-Start-Climate-Control.jpg" width="93" height="93" alt="[ICON] Remote Start with Climate Control feature" style="display:block;color:#001f20;font-size:10px;"/></th>
+			<th style="padding:0 0 45px;font-weight:normal;text-align:left;vertical-align:top;">
+				
+				<!--description of feature-->
+				<table role="presentation" width="100%" cellpadding="0" cellspacing="0" class="feature-desc">
+				<tr><td class="headline" style="padding:10px 0 6px;color:#000000;font-family:Arial,sans-serif;font-size:16px;line-height:normal;letter-spacing:0.02em;">
+					REMOTE START WITH CLIMATE&nbsp;CONTROL<a href="http://genesis.aurorasuite.com/disclaimer/gldp.html#asterisk3" target="_blank" style="color:#000000;text-decoration:underline;"><sup class="sup" style="font-size:75%;line-height:0;letter-spacing:0;">***</sup></a>
+				</td></tr>
+				<tr><td style="color:#000000;font-family:Arial,sans-serif;font-size:14px;line-height:20px;">
+					Start your Genesis&nbsp;G80 remotely via your smartphone app, the web or Alexa and set the engine timer, cabin temperature, front defroster or simply remote stop the engine if you change your&nbsp;mind.
+				</td></tr>
+				</table><!--/.feature-desc-->
+
+			</th>
+		</tr>
+		<tr>
+			<th class="icon" style="padding:0 30px 45px 0;font-weight:normal;vertical-align:top;"><img src="https://webdevjoshb.github.io/Genesis-Lifecycle-Communications/img/icon-Stolen-Vehicle-Recovery.jpg" width="93" height="93" alt="[ICON] Stolen Vehicle Recovery feature" style="display:block;color:#001f20;font-size:10px;"/></th>
+			<th style="padding:0 0 45px;font-weight:normal;text-align:left;vertical-align:top;">
+				
+				<!--description of feature-->
+				<table role="presentation" width="100%" cellpadding="0" cellspacing="0" class="feature-desc">
+				<tr><td class="headline" style="padding:10px 0 6px;color:#000000;font-family:Arial,sans-serif;font-size:16px;line-height:normal;letter-spacing:0.02em;">
+					STOLEN VEHICLE RECOVERY<a href="http://genesis.aurorasuite.com/disclaimer/gldp.html#dagger2" target="_blank" style="color:#000000;text-decoration:underline;"><sup class="sup" style="font-size:75%;line-height:0;letter-spacing:0;">&dagger;&dagger;</sup></a>
+				</td></tr>
+				<tr><td style="color:#000000;font-family:Arial,sans-serif;font-size:14px;line-height:20px;">
+					The Genesis Connected Services can assist the police in locating and recovering a stolen vehicle after a report is&nbsp;filed.
+				</td></tr>
+				</table><!--/.feature-desc-->
+
+			</th>
+		</tr>
+		<tr>
+			<th class="icon" style="padding:0 30px 45px 0;font-weight:normal;vertical-align:top;"><img src="https://webdevjoshb.github.io/Genesis-Lifecycle-Communications/img/icon-Safeguard-Alerts.jpg" width="93" height="93" alt="[ICON] SAFEGUARD ALERTS" style="display:block;color:#001f20;font-size:10px;"/></th>
+			<th style="padding:0 0 45px;font-weight:normal;text-align:left;vertical-align:top;">
+				
+				<!--description of feature-->
+				<table role="presentation" width="100%" cellpadding="0" cellspacing="0" class="feature-desc">
+				<tr><td class="headline" style="padding:10px 0 6px;color:#000000;font-family:Arial,sans-serif;font-size:16px;line-height:normal;letter-spacing:0.02em;">
+					SAFEGUARD&nbsp;ALERTS<a href="http://genesis.aurorasuite.com/disclaimer/gldp.html#dagger2" target="_blank" style="text-decoration:underline;"><sup class="sup" style="font-size:75%;line-height:0;letter-spacing:0;">&dagger;&dagger;</sup></a>
+				</td></tr>
+				<tr><td style="color:#000000;font-family:Arial,sans-serif;font-size:14px;line-height:20px;">
+					Reinforce safe driving habits by monitoring and setting limits on your Genesis speed, hours of operation and movements via text message, email or&nbsp;both.
+				</td></tr>
+				</table><!--/.feature-desc-->
+
+			</th>
+		</tr>
+		</table><!--/.innerWrap .features-->
+
+	</td></tr>
+	</table><!--/.feature-copy-->
+
+</td></tr>
+</table><!--/#feature-remote guidance .wrapper-->
+
+<!--#aside .wrapper-->
+<table role="presentation" width="640" align="center" cellpadding="0" cellspacing="0" id="aside" class="wrapper" style="margin:0 auto;">
+<tr><td class="pad" style="padding:40px 0 50px;border-top:1px solid #804033;">
+
+	<!--#video .innerWrap-->
+	<table role="presentation" width="91.25%" align="center" cellpadding="0" cellspacing="0" id="video" class="innerWrap" style="margin:0 auto;">
+	<tr><td class="headline h3" align="center" style="padding:0 0 32px;color:#425151;font-family:Arial,sans-serif,'GenesisSansHead-Light';font-size:20px;line-height:normal;letter-spacing:0.06em;">
+		LEARN MORE
+	</td></tr>
+	<tr><td align="center" class="headline h4" style="padding:0 0 4px;color:#425151;font-family:Arial,sans-serif,'GenesisSansHead-Light';font-size:15px;line-height:normal;">
+		HOW TO USE:
+	</td></tr>
+	<tr><td align="center" class="headline h5" style="padding:0 0 30px;color:#993333;font-family:Arial,sans-serif,'GenesisSansHead-Regular';font-size:16px;line-height:normal;letter-spacing:0.06em;">
+		CAR FINDER
+	</td></tr>
+	<tr><td align="center" style="padding:0 0 58px;">
+		<a href="https://www.youtube.com/watch?v=TV3ZyMgXisU&list=PL5B13A265441057C6&index=3" target="_blank" class="video"><img src="https://webdevjoshb.github.io/Genesis-Lifecycle-Communications/img/screenshot-howtovideo.jpg" width="581" height="342" alt="[SCREENSHOT] How To Use: Car Finder." border="0" style="display:block;color:#001f20;"/></a>
+	</td></tr>
+	</table><!--/#video .innerWrap-->
+
+	<!--#downloadWrap .innerWrap-->
+	<table role="presentation" width="91.25%" align="center" cellpadding="0" cellspacing="0" id="downloadWrap" class="innerWrap" style="margin:0 auto;">
+	<tr><td align="center" class="headline h3" style="padding:0 0 10px;color:#425151;font-family:Arial,sans-serif,'GenesisSansHead-Light';font-size:20px;line-height:normal;letter-spacing:0.06em;">
+		GENESIS INTELLIGENT ASSISTANT&nbsp;APP
+	</td></tr>
+	<tr><td align="center" class="headline h5" style="padding:0 0 45px;color:#993333;font-family:Arial,sans-serif,'GenesisSansHead-Regular';font-size:16px;line-height:normal;letter-spacing:0.06em;">
+		NOW SMARTWATCH INTEGRATED
+	</td></tr>
+	<tr><td>
+		
+		<!--#download-->
+		<table role="presentation" width="100%" cellpadding="0" cellspacing="0" id="download">
+		<tr><td style="padding:0 0 42px;">
+			
+			<table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+			<tr>
+				<th width="37%" id="downloadImg" style="padding:0;font-weight:normal;text-align:left;vertical-align:middle;"><img src="https://webdevjoshb.github.io/Genesis-Lifecycle-Communications/img/thumbnail-iphone-smartwatch.png" srcset="https://webdevjoshb.github.io/Genesis-Lifecycle-Communications/img/thumbnail-iphone-smartwatch-2x.png 2x" width="198" height="222" alt="[THUMBNAIL] iPhone and Smartwatches with Genesis App" style="display:block;color:#001f20;"/></th>
+				<th id="downloadCopy" style="padding:0;font-weight:normal;text-align:left;vertical-align:top;">
+
+					<table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+					<tr><td style="padding:0 0 12px;color:#000000;font-family:Arial,sans-serif;font-size:14px;line-height:20px;">
+						Enhance your driving experience by turning your favorite mobile device or smartwatch into a remote control for your&nbsp;Genesis.
+					</td></tr>
+					<tr><td style="padding:0 0 12px;color:#000000;font-family:Arial,sans-serif;font-size:14px;line-height:20px;">
+						The mobile app combines convenience and vehicle management with educational and service&#8209;related Genesis Connected Service features on your mobile&nbsp;device.
+					</td></tr>
+					<tr><td style="color:#000000;font-family:Arial,sans-serif;font-size:14px;line-height:20px;">
+						Voice activated features such as remote engine start and stop, car&#8209;finder and even parking meter reminders are available on the Apple&nbsp;Watch and Android&nbsp;Wear Genesis Intelligent Assistant&nbsp;App.
+					</td></tr>
+					</table>
+
+				</th>
+			</tr>
+			</table>
+
+		</td></tr>
+		<tr><td>
+
+			<!--download buttons-->
+			<table role="presentation" width="100%" align="center" cellpadding="0" cellspacing="0" style="margin:0 auto;">
+			<tr>
+				<!--apple-->
+				<td width="50%" align="right" class="btn" style="padding-right:5px;">
+					<a href="https://itunes.apple.com/us/app/genesis-intelligence-app/id867941329?mt=8" target="_blank"><img src="https://webdevjoshb.github.io/Genesis-Lifecycle-Communications/img/btn-download-iphone-app.jpg" width="116" height="42" alt="[BUTTON] Download on the Apple Store." border="0" style="display:block;color:#001f20;font-size:10px;"/></a>
+				</td>
+				<!--android-->
+				<td width="50%" align="left" class="btn" style="padding-left:5px;">
+					<a href="https://play.google.com/store/apps/details?id=com.stationdm.genesis&hl=en" target="_blank"><img src="https://webdevjoshb.github.io/Genesis-Lifecycle-Communications/img/btn-download-android-app.jpg" width="116" height="42" alt="[BUTTON] Get it on Google Play." border="0" style="display:block;color:#001f20;font-size:10px;"/></a>
+				</td>
+			</tr>
+			</table>
+
+		</td></tr>
+		</table><!--/#download-->
+
+	</td></tr>
+	</table><!--/#downloadWrap .innerWrap-->
+
+</td></tr>
+</table><!--/#aside .wrapper-->
+
+<!--#gifts .wrapper-->
+<table role="presentation" width="640" align="center" cellpadding="0" cellspacing="0" id="gifts" class="wrapper" style="margin:0 auto;">
+<tr><td class="pad">
+
+	<!--#giftsWrap // 100% so bottom border extends full width-->
+	<table role="presentation" width="100%" cellpadding="0" cellspacing="0" id="giftsWrap">
+	<tr><td class="innerPad" style="padding:45px 0 50px;border-top:1px solid #804033;">
+
+		<!--#echo .innerWrap-->
+		<table role="presentation" width="91.25%" align="center" cellpadding="0" cellspacing="0" id="echo" class="innerWrap" style="margin:0 auto;">
+		<tr><td class="headline h2" style="padding:0 0 15px;color:#993333;font-weight:normal;font-family:Arial,sans-serif,'GenesisSansHead-Light';font-size:1.4em;line-height:1.091em;text-align:left;">
+			GENESIS OWNERS ECHO THEIR&nbsp;PRAISES
+		</td></tr>
+		<tr><td>
+			
+			<!--#echoWrap-->
+			<table role="presentation" width="100%" cellpadding="0" cellspacing="0" id="echoWrap">
+			<tr>
+				<th width="71%" style="padding:0;font-weight:normal;text-align:left;vertical-align:top;">
+			
+					<table role="presentation" width="90%" cellpadding="0" cellspacing="0">
+					<tr><td class="gift-copy" style="padding:0 0 12px;color:#000000;font-family:Arial,sans-serif;font-size:0.875em;line-height:1.429em;">
+						Compatible with Genesis Connected Services, you can <br class="hide4mobile"/>use your Amazon Echo to control multiple features via basic voice&nbsp;commands:
+					</td></tr>
+					<tr><td class="listPad" style="padding:0 0 40px 25px;">
+
+						<!--voice #commands .list-->
+						<table role="presentation" width="82%" cellpadding="0" cellspacing="0" id="commands" class="list">
+						<tr>
+							<td width="12" style="padding:0 0 8px;color:#000000;font-family:Arial,sans-serif;font-size:0.875em;line-height:1.3em;vertical-align:text-top;">&bull;</td>
+							<td style="padding:0 0 8px;">
+									
+								<!--for text alignment underneath quotation mark-->
+								<table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+								<tr>
+									<td style="color:#000000;font-family:Arial,sans-serif;font-size:0.875em;line-height:1.3em;vertical-align:text-top;">“</td>
+									<td style="color:#000000;font-family:Arial,sans-serif;font-size:0.875em;line-height:1.3em;">Alexa, tell Genesis to lock my&nbsp;car.”</td>
+								</tr>
+								</table>
+
+							</td>
+						</tr>
+						<tr>
+							<td style="padding:0 0 8px;color:#000000;font-family:Arial,sans-serif;font-size:0.875em;line-height:1.3em;vertical-align:text-top;">&bull;</td>
+							<td style="padding:0 0 8px;">
+
+								<!--for text alignment underneath quotation mark-->
+								<table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+								<tr>
+									<td style="color:#000000;font-family:Arial,sans-serif;font-size:0.875em;line-height:1.3em;vertical-align:text-top;">“</td>
+									<td style="color:#000000;font-family:Arial,sans-serif;font-size:0.875em;line-height:1.3em;">Alexa, tell Genesis to start my G80 and set the temperature to 72&nbsp;degrees.”</td>
+								</tr>
+								</table>
+
+							</td>
+						</tr>
+						<tr>
+							<td style="color:#000000;font-family:Arial,sans-serif;font-size:0.875em;line-height:1.3em;vertical-align:text-top;">&bull;</td>
+							<td>
+
+								<!--for text alignment underneath quotation mark-->
+								<table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+								<tr>
+									<td style="color:#000000;font-family:Arial,sans-serif;font-size:0.875em;line-height:1.3em;vertical-align:text-top;">“</td>
+									<td style="color:#000000;font-family:Arial,sans-serif;font-size:0.875em;line-height:1.3em;">Alexa, tell Genesis to unlock my&nbsp;sedan.”</td>
+								</tr>
+								</table>
+
+							</td>
+						</tr>
+						</table><!--/voice #commands .list-->
+
+					</td></tr>
+					<tr><td class="gift-cta" style="padding:0 0 35px;">
+						<!--call to action: learn more-->
+						<a href="https://www.amazon.com/Amazon-Echo-Bluetooth-Speaker-with-WiFi-Alexa/dp/B00X4WHP5E" target="_blank"><img src="https://webdevjoshb.github.io/Genesis-Lifecycle-Communications/img/btn-Learn-More-About-Echo.jpg" width="190" height="32" alt="[BUTTON] Learn More about Echo." border="0" style="display:block;color:#000000;"/></a>
+					</td></tr>
+					<tr><td class="gift-logo" style="padding:0 0 30px;">
+						<a href="https://www.amazon.com/Amazon-Echo-Bluetooth-Speaker-with-WiFi-Alexa/dp/B00X4WHP5E" target="_blank"><img src="https://webdevjoshb.github.io/Genesis-Lifecycle-Communications/img/logo-Amazon-Echo.jpg" width="136" height="30" alt="[LOGO] Amazon Echo" border="0" style="display:block;color:#000000"/></a>
+					</td></tr>
+					</table>
+
+				</th>
+				<th width="29%" class="product" style="padding:0;font-weight:normal;text-align:center;vertical-align:bottom;">
+					<a href="https://www.amazon.com/Amazon-Echo-Bluetooth-Speaker-with-WiFi-Alexa/dp/B00X4WHP5E" target="_blank"><img src="https://webdevjoshb.github.io/Genesis-Lifecycle-Communications/img/Amazon-Echo.jpg" width="168" height="280" alt="Amazon Echo" border="0" style="display:block;color:#000000;"/></a>
+				</th>
+			</tr>
+			</table><!--/#echoWrap-->
+
+		</td></tr>
+		</table><!--/#echo .innerWrap-->
+
+	</td></tr>
+	</table><!--/#giftsWrap-->
+
+</td></tr>
+</table><!--/#gifts .wrapper-->
+
+<!--#footer .wrapper-->
+<table role="presentation" width="640" align="center" cellpadding="0" cellspacing="0" id="footer" class="wrapper" style="margin:0 auto;">
+<tr><td class="pad" style="padding:62px 0 0;border-top:1px solid #804033;">
+
+	<!--#footerWrap-->
+	<table role="presentation" width="100%" cellpadding="0" cellspacing="0" id="footerWrap">
+	<tr><td background="https://webdevjoshb.github.io/Genesis-Lifecycle-Communications/img/bg-footer.jpg" class="background">
+	<!--[if gte mso 9]>
+	    <v:image xmlns:v="urn:schemas-microsoft-com:vml" id="theImage" style="behavior:url(#default#VML);position:absolute;width:640px;height:485px;top:0;left:0;z-index:-1" src="https://webdevjoshb.github.io/Genesis-Lifecycle-Communications/img/bg-footer.jpg"/>
+  	<![endif]-->
+
+		<!--#footer-images-->
+		<table role="presentation" width="100%" cellpadding="0" cellspacing="0" id="footer-images">
+		<tr><td align="center" id="footer-logo" class="innerPad" style="padding:0 0 60px;">
+			<a href="http://www.genesismotorsusa.com" target="_blank"><img src="https://webdevjoshb.github.io/Genesis-Lifecycle-Communications/img/logo-footer-Genesis.png" srcset="https://webdevjoshb.github.io/Genesis-Lifecycle-Communications/img/logo-footer-Genesis-2x.png 2x" width="299" height="116" alt="[LOGO] Hyundai Genesis" border="0" style="display:block;color:#000000;"/></a>
+		</td></tr>
+		</table><!--/#footer-images-->
+
+		<!--#footer-links-->
+		<table role="presentation" width="100%" cellpadding="0" cellspacing="0" id="footer-links">
+		<tr><td class="innerPad" style="padding:0 0 36px;">
+
+			<!--.innerWrap-->
+			<table role="presentation" width="auto" align="center" cellpadding="0" cellspacing="0" class="innerWrap" style="margin:0 auto;">
+			<tr>
+				<th style="padding:0 19px 0 0;font-weight:normal;font-family:Arial,sans-serif;font-size:12px;line-height:normal;letter-spacing:0.06em;text-align:left;">
+					<a href="http://www.genesismotorsusa.com" target="_blank" style="color:#001f20;text-decoration:none;">GENESIS.COM</a>
+				</th>
+				<th style="padding:0 19px 0 0;font-weight:normal;font-family:Arial,sans-serif;font-size:12px;line-height:normal;letter-spacing:0.06em;text-align:left;">
+					<a href="http://www.genesismotorsusa.com/owners" target="_blank" style="color:#001f20;text-decoration:none;">MAINTENANCE SCHEDULE</a>
+				</th>
+				<th style="padding:0 19px 0 0;font-weight:normal;font-family:Arial,sans-serif;font-size:12px;line-height:normal;letter-spacing:0.06em;text-align:left;">
+					<a href="https://www.genesismotorsusa.com/privacy-policy.html" target="_blank" style="color:#001f20;text-decoration:none;">PRIVACY</a>
+				</th>
+				<th style="padding:0;font-weight:normal;font-family:Arial,sans-serif;font-size:12px;line-height:normal;letter-spacing:0.06em;text-align:left;">
+					<a href="http://qa.vib.yourhyundaidealership.com/html/unsubg.htm?cid=[campaign_item_guid]" target="_blank" style="color:#001f20;text-decoration:none;">UNSUBSCRIBE</a>
+				</th>
+			</tr>
+			</table><!--/.innerWrap-->
+
+		</td></tr>
+		</table><!--/#footer-links-->
+
+		<!--#social-media-->
+		<table role="presentation" width="100%" cellpadding="0" cellspacing="0" id="social-media">
+		<tr><td class="innerPad" style="padding:0 0 47px;">
+
+			<!--.innerWrap-->
+			<table role="presentation" width="auto" align="center" cellpadding="0" cellspacing="0" class="innerWrap" style="margin:0 auto;">
+			<tr>
+				<td style="padding-right:19px;">
+					<a href="https://twitter.com/genesisusa" target="_blank">
+						<img src="https://webdevjoshb.github.io/Genesis-Lifecycle-Communications/img/btn-Twitter.png" srcset="https://webdevjoshb.github.io/Genesis-Lifecycle-Communications/img/btn-Twitter-2x.png 2x"width="42" height="42" alt="[BUTTON] 
+						Twitter" border="0" style="display:block;color:#000000;font-size:10px;"/></a>
+				</td>
+				<td style="padding-right:19px;">
+					<a href="https://www.instagram.com/genesis_usa/" target="_blank">
+						<img src="https://webdevjoshb.github.io/Genesis-Lifecycle-Communications/img/btn-Instagram.png" srcset="https://webdevjoshb.github.io/Genesis-Lifecycle-Communications/img/btn-Instagram-2x.png 2x" width="42" height="42" alt="[BUTTON] Instagram" border="0" style="display:block;color:#000000;font-size:10px;"/></a>
+				</td>
+				<td style="padding-right:19px;">
+					<a href="https://www.facebook.com/Genesis-USA-732551050183470/" target="_blank">
+						<img src="https://webdevjoshb.github.io/Genesis-Lifecycle-Communications/img/btn-Facebook.png" srcset="https://webdevjoshb.github.io/Genesis-Lifecycle-Communications/img/btn-Facebook-2x.png 2x" width="42" height="42" alt="[BUTTON] Facebook" border="0" style="display:block;color:#000000;font-size:10px;"/></a>
+				</td>
+				<td>
+					<a href="https://www.youtube.com/channel/UCHePEXTqWF-lexZaIkFHTMw" target="_blank">
+						<img src="https://webdevjoshb.github.io/Genesis-Lifecycle-Communications/img/btn-Youtube.png" srcset="https://webdevjoshb.github.io/Genesis-Lifecycle-Communications/img/btn-Youtube-2x.png 2x" width="42" height="42" alt="[BUTTON] Youtube" border="0" style="display:block;color:#000000;font-size:10px;"/></a>
+				</td>
+			</tr>
+			</table><!--/.innerWrap-->
+
+		</td></tr>
+		</table><!--/#social-media-->
+
+		<!--#disclaimers-->
+		<table role="presentation" width="100%" cellpadding="0" cellspacing="0" id="disclaimers">
+		<tr><td class="innerPad" style="padding:0 0 35px;">
+			
+			<!--.innerWrap-->
+			<table role="presentation" width="84%" align="center" cellpadding="0" cellspacing="0" class="innerWrap" style="margin:0 auto;">
+			<tr><td align="center" style="padding:0 0 7px;color:#001f20;font-family:Arial,sans-serif;font-size:10px;line-height:13px;">
+				<a href="http://genesis.aurorasuite.com/disclaimer/gldp.html" target="_blank" style="color:#001f20;text-decoration:underline;">Legal Disclaimers</a>
+			</td></tr>
+			<tr><td align="center" style="padding:0 0 12px;color:#001f20;font-family:Arial,sans-serif;font-size:10px;line-height:13px;">
+				Please view <a href="https://www.genesismotorsusa.com/terms-of-use.html" target="_blank" style="color:#001f20;text-decoration:underline;">Terms &amp; Conditions</a>. Should you prefer not to receive Genesis Connected Services marketing communications by&nbsp;email, please unsubscribe <a href="http://qa.vib.yourhyundaidealership.com/html/unsubg.htm?cid=[campaign_item_guid]" target="_blank" style="color:#001f20;text-decoration:underline;">here</a> or email: <a href="mailto:customercare@genesismotorsusa.com" style="color:#001f20;text-decoration:underline;">customercare@genesismotorsusa.com</a>. Please do not reply to this email as we&nbsp;are&nbsp;not able to respond to messages sent to this address. Please visit <a href="https://www.genesismotorsUSA.com/owners" target="_blank" style="color:#001f20;text-decoration:underline;">MyGenesisUSA.com</a> to find answers to your questions or call&nbsp;<a href="tel:+18443409741" style="color:#001f20;text-decoration:none;white-space:nowrap;">1-844-340-9741</a>.
+			</td></tr>
+			<tr><td align="center" style="color:#001f20;font-family:Arial,sans-serif;font-size:10px;line-height:13px;">
+				Week #: [XX-X] &nbsp;&nbsp; Email Letter Code: G80_C135<br/>
+				&lt;XXXXXXXXXXXX&gt;
+			</td></tr>
+			<tr><td id="tracking" style="padding:0;font-size:0;line-height:0;">
+				<!--exacttarget analytics-->
+				<custom name="opencounter" type="tracking"/>
+			</td></tr>
+			</table><!--/.innerWrap-->
+
+		</td></tr>
+		</table><!--/#disclaimers-->
+
+	</td></tr>
+	</table><!--/#footerWrap-->
+
+</td></tr>
+<!-- Android App Hack -->
+<tr><td class="gmailFix">
+	<img src="https://webdevjoshb.github.io/assets/images/spacer.gif" alt="" width="640" height="1" border="0" style="display:block;width:640px;min-width:640px;min-height:1px;max-height:1px;"/>
+</td></tr>
+</table><!--/#footer .wrapper-->
+
+</body>
+</html>
