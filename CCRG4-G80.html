@@ -8,8 +8,9 @@
 <title>Genesis Connected Services</title>
 
 <style type="text/css">
-@font-face { font-family:"GenesisSansHead-Regular"; src:url("https://www.joshuablauvelt.com/assets/fonts/GenesisSansHead-Regular.eot"); src:url("https://www.joshuablauvelt.com/assets/fonts/GenesisSansHead-Regular.eot?#iefix") format("embedded-opentype"), url("https://www.joshuablauvelt.com/assets/fonts/GenesisSansHead-Regular.woff2") format("woff2"), url("https://www.joshuablauvelt.com/assets/fonts/GenesisSansHead-Regular.woff") format("woff"), url("https://www.joshuablauvelt.com/assets/fonts/GenesisSansHead-Regular.ttf") format("truetype"); font-weight:normal; font-style:normal; }
-@font-face { font-family:"GenesisSansHead-Light"; src:url("https://www.joshuablauvelt.com/assets/fonts/GenesisSansHead-Light.eot"); src:url("https://www.joshuablauvelt.com/assets/fonts/GenesisSansHead-Light.eot?#iefix") format("embedded-opentype"), url("https://www.joshuablauvelt.com/assets/fonts/GenesisSansHead-Light.woff2") format("woff2"), url("https://www.joshuablauvelt.com/assets/fonts/GenesisSansHead-Light.woff") format("woff"), url("https://www.joshuablauvelt.com/assets/fonts/GenesisSansHead-Light.ttf") format("truetype"); font-weight:normal; font-style:normal; }
+@font-face { font-family:"GenesisSansHead-Regular"; src:url("https://webdevjoshb.github.io/assets/fonts/GenesisSansHead-Regular.woff2") format("woff2"), url("https://webdevjoshb.github.io/assets/fonts/GenesisSansHead-Regular.woff") format("woff"), url("https://webdevjoshb.github.io/assets/fonts/GenesisSansHead-Regular.ttf") format("truetype"); font-weight:normal; font-style:normal; }
+@font-face { font-family:"GenesisSansHead-Light"; src:url("https://webdevjoshb.github.io/assets/fonts/GenesisSansHead-Light.woff2") format("woff2"), url("https://webdevjoshb.github.io/assets/fonts/GenesisSansHead-Light.woff") format("woff"), url("https://webdevjoshb.github.io/assets/fonts/GenesisSansHead-Light.ttf") format("truetype"); font-weight:normal; font-style:normal; }
+@font-face { font-family: "GenesisSansText-Regular"; src:url("https://webdevjoshb.github.io/assets/fonts/GenesisSansText-Regular.woff2") format("woff2"), url("https://webdevjoshb.github.io/assets/fonts/GenesisSansText-Regular.woff") format("woff"), url("https://webdevjoshb.github.io/assets/fonts/GenesisSansText-Regular.ttf") format("truetype"); font-weight: normal; font-style: normal; } 
 
 body { width:100% !important; margin:0 auto !important; font-size:100%; -moz-text-size-adjust:100%; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; }
 table, td { border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; }
@@ -18,24 +19,26 @@ span { font-size:inherit; }
 #tracking img { display:none !important; } /* hide tracking pixels */
 
 /* link handling */
-a, a:visited { color:inherit; font-size:inherit; }
+a:visited { color:inherit; font-size:inherit; }
 a:hover { text-decoration:underline !important; }
-#weblink a { text-decoration:none !important; } /* fix for aol */
+#weblink a:link { text-decoration:none !important; } /* fix for aol */
 #weblink a:hover { text-decoration:underline !important; } /* fix for aol */
-.feature-heading a, .feature-heading a:link, .feature-heading a:visited {text-decoration:none !important; }
-#footer a, #footer a:visited { color:#001f20; }
+.btn a:link { text-decoration:none !important; }
+.btn a:hover { text-decoration: underline !important; }
+.feature-heading a:link, .feature-heading a:visited {text-decoration:none !important; }
+.feature-heading a:hover { text-decoration:underline !important; }
+#footer a:link, #footer a:visited { color:#001f20; }
 a.amazon-link:hover { text-decoration:none !important; cursor:text !important; }
-a img { text-decoration:none !important; border:none; }
-a[href^=tel], a[href^=sms], a:visited[href^=tel], a:visited[href^=sms], a:hover[href^=tel], a:hover[href^=sms], a:active[href^=tel], a:active[href^=sms] { color:#001f20 !important; text-decoration:none !important; }
-a[href^=mail], a:visited[href^=mail] { color:#001f20 !important; }
-a[x-apple-data-detectors=true] { color:inherit !important; text-decoration:inherit !important; } 
+a:link img { text-decoration:none !important; border:none; }
+a:link[href^=tel], a[href^=sms], a:visited[href^=tel], a:visited[href^=sms], a:hover[href^=tel], a:hover[href^=sms], a:active[href^=tel], a:active[href^=sms] { color:#001f20 !important; text-decoration:none !important; }
+a:link[href^=mail], a:visited[href^=mail] { color:#001f20 !important; }
+a:link[x-apple-data-detectors=true] { color:inherit !important; text-decoration:inherit !important; } 
 
 /*outlook links visited state fix*/
-span.MsoHyperlink { mso-style-priority:99; color:inherit; }
-span.MsoHyperlinkFollowed { mso-style-priority:99; color:inherit; }
+span.MsoHyperlink, span.MsoHyperlinkFollowed { mso-style-priority:99; color:inherit; }
 
 /* hotmail adjustments */ 
-.ExternalClass { width:100% !important; }
+.ExternalClass { width:100%; }
 .ExternalClass * { line-height:100%; } 
 
 /* Gmail App Layout hack */
@@ -48,17 +51,20 @@ td a[style*='#7f4033'], td a[style*='#7f4033'] span, th a[style*='#7f4033'], th 
 #footer-links span { text-shadow:0 0 1px rgba(0,31,32,0.1) !important; }
 
 /* video thumbnail hover-over effect */
-.video:hover img { filter:brightness(130%); }
+.video img { transition-property: filter; transition-duration: .2s; transition-timing-function: ease-in; }
+.video:hover img { filter:brightness(140%); }
 
 /* font-family swap, includes font ratio adjustments for arial fallback */
 /* extra span definitions to fix buggy cascade in some clients */
 [style*='-Regular'] { font-family:GenesisSansHead-Regular,Arial,sans-serif !important; }
 [style*='-Light'] { font-family:GenesisSansHead-Light,Arial,sans-serif !important; }
+[style*='SansText-Regular'] { font-family:GenesisSansText-Regular,Arial,sans-serif !important; }
 .h1[style*='Genesis'], .h1[style*='Genesis'] span { font-size:33px !important; line-height:1.1em !important; text-shadow:0 0 1px rgba(80,81,81,0.2); }
-.h2[style*='Genesis'], .h2[style*='Genesis'] span { font-size:25px !important; text-shadow:0 0 1px rgba(153,51,51,0.2); }
+.h2[style*='Genesis'], .h2[style*='Genesis'] span { text-shadow:0 0 1px rgba(153,51,51,0.2); }
 .h3[style*='Genesis'], .h3[style*='Genesis'] span { font-size:22px !important; }
 .h4[style*='Genesis'], .h4[style*='Genesis'] span { font-size:16px !important; }
 .h5[style*='Genesis'], .h5[style*='Genesis'] span { font-size:18px !important; text-shadow:0 0 1px rgba(172,55,44,0.1); }
+.btn a[style*='Genesis'] { font-size: 13px !important; }
 .feature-heading .headline[style*='Genesis'] { font-size:18px !important; }
 .feature-heading .cta[style*='Genesis'] { font-size:13px !important; }
 
@@ -165,10 +171,6 @@ td, td span, td a, th, th span, th a { font-size:17px !important; line-height:1.
 </o:OfficeDocumentSettings>
 </xml>
 <![endif]-->
-<!--[if mso]>
-<xml xmlns:w="urn:schemas-microsoft-com:office:word">
-<w:WordDocument><w:AutoHyphenation/></w:WordDocument></xml>
-<![endif]-->
 </head>
 
 <body style="width:100% !important;margin:0 auto !important;padding:0;font-size:100%;">
@@ -182,7 +184,7 @@ The new Genesis G80 affords you a complimentary subscription to Genesis Connecte
 <table role="presentation" align="center" cellpadding="0" cellspacing="0" id="header" class="wrapper" style="width:640px;margin:0 auto;">
 <tr><td valign="top" background="https://www.joshuablauvelt.com/hyundai/Genesis-Lifecycle-Communications/img/bg-header.jpg" class="background" style="font-size:0;line-height:0;">
 <!--[if gte mso 9]>
-	<v:image xmlns:v="urn:schemas-microsoft-com:vml" id="theImage" style="behavior:url(#default#VML);position:absolute;width:640px;height:435px;top:0;left:0;z-index:-1" src="https://www.joshuablauvelt.com/hyundai/Genesis-Lifecycle-Communications/img/bg-header.jpg"/>
+	<v:image id="theImage" style="behavior:url(#default#VML);position:absolute;width:640px;height:435px;top:0;left:0;z-index:-1" src="https://www.joshuablauvelt.com/hyundai/Genesis-Lifecycle-Communications/img/bg-header.jpg"/>
 <![endif]-->
 
 	<!--#logoWrap // 100% so bottom border extends 640px-->
@@ -214,8 +216,14 @@ The new Genesis G80 affords you a complimentary subscription to Genesis Connecte
 			The new Genesis G80 affords you a complimentary subscription to Genesis Connected Services, a portfolio of advanced “connected car” safety, convenience and Car Care features you can access via your mobile devices by downloading the Genesis Intelligent Assistant&nbsp;App.
 		</td></tr>
 		<tr><td>
+
 			<!--call to action: .btn explore-->
-			<a href="http://www.genesismotorsusa.com" target="_blank"><img src="https://www.joshuablauvelt.com/hyundai/Genesis-Lifecycle-Communications/img/btn-Explore.jpg" srcset="https://www.joshuablauvelt.com/hyundai/Genesis-Lifecycle-Communications/img/btn-Explore-2x.jpg 2x" width="83" height="32" alt="[BUTTON] Explore" border="0" class="btn" style="display:block;color:#001f20;font-size:10px;"/></a>
+			<table role="presentation" align="left" cellpadding="0" cellspacing="0" class="btn" style="width:83px;">
+			<tr><td align="center" style="background-color:#804033;">
+				<a href="http://www.genesismotorsusa.com" target="_blank" style="color:#ffffff;font-family:Arial,sans-serif,'GenesisSansText-Regular';font-size:12px;letter-spacing:0.02em;border:1px solid #804033;padding:15px 0;display:block;">EXPLORE</a>
+			</td></tr>
+			</table>
+
 		</td></tr>
 		</table>
 
@@ -253,7 +261,7 @@ The new Genesis G80 affords you a complimentary subscription to Genesis Connecte
 		<td bgcolor="#804033" style="width:32.5%;vertical-align:middle;">
 			
 			<table role="presentation" align="center" cellpadding="0" cellspacing="0" style="width:88%;margin:0 auto;">
-			<tr><td height="58" align="center" class="cta" style="color:#ffffff;font-family:Arial,sans-serif,'GenesisSansHead-Regular';font-size:12px;line-height:normal;letter-spacing:0.02em;vertical-align:middle;">
+			<tr><td height="58" align="center" class="cta" style="color:#ffffff;font-family:Arial,sans-serif,'GenesisSansText-Regular';font-size:12px;line-height:normal;letter-spacing:0.02em;vertical-align:middle;">
 				<a href="http://www.genesismotorsusa.com/owners" target="_blank" style="color:#ffffff;text-decoration:none;">DISCOVER<span class="hide320" style="text-decoration:none;"> MORE</span></a>&nbsp;►
 			</td></tr>
 			</table>
@@ -345,7 +353,7 @@ The new Genesis G80 affords you a complimentary subscription to Genesis Connecte
 		<td bgcolor="#804033" style="width:32.5%;vertical-align:middle;">
 			
 			<table role="presentation" align="center" cellpadding="0" cellspacing="0" style="width:88%;margin:0 auto;">
-			<tr><td height="58" align="center" class="cta" style="color:#ffffff;font-family:Arial,sans-serif,'GenesisSansHead-Regular';font-size:12px;line-height:normal;letter-spacing:0.02em;vertical-align:middle;">
+			<tr><td height="58" align="center" class="cta" style="color:#ffffff;font-family:Arial,sans-serif,'GenesisSansText-Regular';font-size:12px;line-height:normal;letter-spacing:0.02em;vertical-align:middle;">
 				<a href="http://www.genesismotorsusa.com/owners" target="_blank" style="color:#ffffff;text-decoration:none;">DISCOVER<span class="hide320" style="text-decoration:none;"> MORE</span></a>&nbsp;►
 			</td></tr>
 			</table>
@@ -361,7 +369,7 @@ The new Genesis G80 affords you a complimentary subscription to Genesis Connecte
 		<!--.innerWrap .features-->
 		<table role="presentation" align="center" cellpadding="0" cellspacing="0" class="innerWrap features" style="width:91.25%;margin:0 auto;">
 		<tr>
-			<th class="icon" style="padding:0 30px 45px 0;font-size:0;line-height:0;vertical-align:top;"><img src="https://www.joshuablauvelt.com/hyundai/Genesis-Lifecycle-Communications/img/icon-SOS-Emergency-Assistance.jpg" width="93" height="93" alt="[ICON] SOS Emergency Assistance feature" style="display:block;color:#001f20;font-size:10px;"/></th>
+			<th class="icon" style="padding:0 30px 45px 0;font-weight:normal;vertical-align:top;"><img src="https://www.joshuablauvelt.com/hyundai/Genesis-Lifecycle-Communications/img/icon-SOS-Emergency-Assistance.jpg" width="93" height="93" alt="[ICON] SOS Emergency Assistance feature" style="display:block;color:#001f20;font-size:10px;"/></th>
 			<th style="padding:0 0 45px;font-weight:normal;text-align:left;vertical-align:top;">
 				
 				<!--description of feature-->
@@ -377,7 +385,7 @@ The new Genesis G80 affords you a complimentary subscription to Genesis Connecte
 			</th>
 		</tr>
 		<tr>
-			<th class="icon" style="padding:0 30px 45px 0;font-size:0;line-height:0;vertical-align:top;"><img src="https://www.joshuablauvelt.com/hyundai/Genesis-Lifecycle-Communications/img/icon-Automatic-Collision-Notification.jpg" width="93" height="93" alt="[ICON] Automatic Collision Notification feature" style="display:block;color:#001f20;font-size:10px;"/></th>
+			<th class="icon" style="padding:0 30px 45px 0;font-weight:normal;vertical-align:top;"><img src="https://www.joshuablauvelt.com/hyundai/Genesis-Lifecycle-Communications/img/icon-Automatic-Collision-Notification.jpg" width="93" height="93" alt="[ICON] Automatic Collision Notification feature" style="display:block;color:#001f20;font-size:10px;"/></th>
 			<th style="padding:0 0 45px;font-weight:normal;text-align:left;vertical-align:top;">
 				
 				<!--description of feature--> 
@@ -507,7 +515,7 @@ The new Genesis G80 affords you a complimentary subscription to Genesis Connecte
 
 		<!--#echo .innerWrap-->
 		<table role="presentation" align="center" cellpadding="0" cellspacing="0" id="echo" class="innerWrap" style="width:91.25%;margin:0 auto;">
-		<tr><td class="headline h2" style="padding:0 0 15px;color:#993333;font-weight:normal;font-family:Arial,sans-serif,'GenesisSansHead-Light';font-size:1.4em;line-height:1.091em;text-align:left;">
+		<tr><td class="headline h2" style="padding:0 0 15px;color:#993333;font-weight:normal;font-family:Arial,sans-serif,'GenesisSansHead-Light';font-size:27px;line-height:1.091em;text-align:left;">
 			GENESIS OWNERS ECHO THEIR&nbsp;PRAISES
 		</td></tr>
 		<tr><td>
@@ -518,7 +526,7 @@ The new Genesis G80 affords you a complimentary subscription to Genesis Connecte
 				<th width="71%" style="padding:0;font-weight:normal;text-align:left;vertical-align:top;">
 			
 					<table role="presentation" cellpadding="0" cellspacing="0" style="width:90%;">
-					<tr><td class="gift-copy" style="padding:0 0 12px;color:#000000;font-family:Arial,sans-serif;font-size:0.875em;line-height:1.429em;">
+					<tr><td class="gift-copy" style="padding:0 0 12px;color:#000000;font-family:Arial,sans-serif;font-size:14px;line-height:20px;">
 						Compatible with Genesis Connected Services, you can <br class="hide4mobile"/>use your Amazon Echo to control multiple features via basic voice&nbsp;commands:
 					</td></tr>
 					<tr><td class="listPad" style="padding:0 0 40px 25px;">
@@ -526,42 +534,42 @@ The new Genesis G80 affords you a complimentary subscription to Genesis Connecte
 						<!--voice #commands .list-->
 						<table role="presentation" cellpadding="0" cellspacing="0" id="commands" class="list" style="width:82%;">
 						<tr>
-							<td width="12" style="padding:0 0 8px;color:#000000;font-family:Arial,sans-serif;font-size:0.875em;line-height:1.3em;vertical-align:text-top;">&bull;</td>
+							<td width="12" style="padding:0 0 8px;color:#000000;font-family:Arial,sans-serif;font-size:14px;line-height:20px;vertical-align:text-top;">&bull;</td>
 							<td style="padding:0 0 8px;">
 									
 								<!--for text alignment underneath quotation mark-->
 								<table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;">
 								<tr>
-									<td style="color:#000000;font-family:Arial,sans-serif;font-size:0.875em;line-height:1.3em;vertical-align:text-top;">“</td>
-									<td style="color:#000000;font-family:Arial,sans-serif;font-size:0.875em;line-height:1.3em;">Alexa, tell Genesis to lock my&nbsp;car.”</td>
+									<td style="color:#000000;font-family:Arial,sans-serif;font-size:14px;line-height:20px;vertical-align:text-top;">“</td>
+									<td style="color:#000000;font-family:Arial,sans-serif;font-size:14px;line-height:20px;">Alexa, tell Genesis to lock my&nbsp;car.”</td>
 								</tr>
 								</table>
 
 							</td>
 						</tr>
 						<tr>
-							<td style="padding:0 0 8px;color:#000000;font-family:Arial,sans-serif;font-size:0.875em;line-height:1.3em;vertical-align:text-top;">&bull;</td>
+							<td style="padding:0 0 8px;color:#000000;font-family:Arial,sans-serif;font-size:14px;line-height:20px;vertical-align:text-top;">&bull;</td>
 							<td style="padding:0 0 8px;">
 
 								<!--for text alignment underneath quotation mark-->
 								<table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;">
 								<tr>
-									<td style="color:#000000;font-family:Arial,sans-serif;font-size:0.875em;line-height:1.3em;vertical-align:text-top;">“</td>
-									<td style="color:#000000;font-family:Arial,sans-serif;font-size:0.875em;line-height:1.3em;">Alexa, tell Genesis to start my G80 and set the temperature to 72&nbsp;degrees.”</td>
+									<td style="color:#000000;font-family:Arial,sans-serif;font-size:14px;line-height:20px;vertical-align:text-top;">“</td>
+									<td style="color:#000000;font-family:Arial,sans-serif;font-size:14px;line-height:20px;">Alexa, tell Genesis to start my G80 and set the temperature to 72&nbsp;degrees.”</td>
 								</tr>
 								</table>
 
 							</td>
 						</tr>
 						<tr>
-							<td style="color:#000000;font-family:Arial,sans-serif;font-size:0.875em;line-height:1.3em;vertical-align:text-top;">&bull;</td>
+							<td style="color:#000000;font-family:Arial,sans-serif;font-size:14px;line-height:20px;vertical-align:text-top;">&bull;</td>
 							<td>
 
 								<!--for text alignment underneath quotation mark-->
 								<table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;">
 								<tr>
-									<td style="color:#000000;font-family:Arial,sans-serif;font-size:0.875em;line-height:1.3em;vertical-align:text-top;">“</td>
-									<td style="color:#000000;font-family:Arial,sans-serif;font-size:0.875em;line-height:1.3em;">Alexa, tell Genesis to unlock my&nbsp;sedan.”</td>
+									<td style="color:#000000;font-family:Arial,sans-serif;font-size:14px;line-height:20px;vertical-align:text-top;">“</td>
+									<td style="color:#000000;font-family:Arial,sans-serif;font-size:14px;line-height:20px;">Alexa, tell Genesis to unlock my&nbsp;sedan.”</td>
 								</tr>
 								</table>
 
@@ -571,8 +579,14 @@ The new Genesis G80 affords you a complimentary subscription to Genesis Connecte
 
 					</td></tr>
 					<tr><td class="gift-cta" style="padding:0 0 35px;">
-						<!--call to action: learn more-->
-						<a href="https://www.amazon.com/Amazon-Echo-Bluetooth-Speaker-with-WiFi-Alexa/dp/B00X4WHP5E" target="_blank"><img src="https://www.joshuablauvelt.com/hyundai/Genesis-Lifecycle-Communications/img/btn-Learn-More-About-Echo.jpg" width="190" height="32" alt="[BUTTON] Learn More about Echo." border="0" style="display:block;color:#000000;"/></a>
+
+						<!--call to action: .btn learn more about echo-->
+						<table role="presentation" align="left" cellpadding="0" cellspacing="0" class="btn" style="width:190px;">
+						<tr><td align="center" style="background-color:#804033;">
+							<a href="https://www.amazon.com/Amazon-Echo-Bluetooth-Speaker-with-WiFi-Alexa/dp/B00X4WHP5E" target="_blank" style="color:#ffffff;font-family:Arial,sans-serif,'GenesisSansText-Regular';font-size:12px;letter-spacing:0.02em;text-decoration:none;border:1px solid #804033;padding:7px 0;display:block;">LEARN MORE ABOUT ECHO</a>
+						</td></tr>
+						</table>
+
 					</td></tr>
 					<tr><td class="gift-logo" style="padding:0 0 30px;">
 						<a href="https://www.amazon.com/Amazon-Echo-Bluetooth-Speaker-with-WiFi-Alexa/dp/B00X4WHP5E" target="_blank"><img src="https://www.joshuablauvelt.com/hyundai/Genesis-Lifecycle-Communications/img/logo-Amazon-Echo.jpg" width="136" height="30" alt="[LOGO] Amazon Echo" border="0" style="display:block;color:#000000"/></a>
@@ -601,9 +615,9 @@ The new Genesis G80 affords you a complimentary subscription to Genesis Connecte
 
 	<!--#footerWrap-->
 	<table role="presentation" cellpadding="0" cellspacing="0" id="footerWrap" style="width:100%;">
-	<tr><td background="https://www.joshuablauvelt.com/hyundai/Genesis-Lifecycle-Communications/img/bg-footer.jpg" class="background">
+	<tr><td background="img/bg-footer-470px.jpg" class="background">
 	<!--[if gte mso 9]>
-	    <v:image xmlns:v="urn:schemas-microsoft-com:vml" id="theImage" style="behavior:url(#default#VML);position:absolute;width:640px;height:485px;top:0;left:0;z-index:-1" src="https://www.joshuablauvelt.com/hyundai/Genesis-Lifecycle-Communications/img/bg-footer.jpg"/>
+	    <v:image id="theImage" style="behavior:url(#default#VML);position:absolute;width:640px;height:485px;top:0;left:0;z-index:-1" src="https://www.joshuablauvelt.com/hyundai/Genesis-Lifecycle-Communications/img/bg-footer.jpg"/>
   	<![endif]-->
 
 		<!--#footer-images-->
