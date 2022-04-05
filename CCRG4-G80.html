@@ -24,9 +24,7 @@ a:hover { text-decoration:underline !important; }
 #weblink a:link { text-decoration:none !important; } /* fix for aol */
 #weblink a:hover { text-decoration:underline !important; } /* fix for aol */
 .btn a:link { text-decoration:none !important; }
-.btn a:hover { text-decoration: underline !important; }
-.feature-heading a:link, .feature-heading a:visited { text-decoration:none !important; }
-.feature-heading a:hover { text-decoration:underline !important; }
+.feature-heading a:link, .feature-heading a:visited, .feature-heading a:hover { text-decoration:none !important; }
 #footer a:link, #footer a:visited { color:#001f20; }
 a.amazon-link:hover { text-decoration:none !important; cursor:text !important; }
 a:link img { text-decoration:none !important; border:none; }
@@ -59,7 +57,7 @@ td a[style*='#7f4033'], td a[style*='#7f4033'] span, th a[style*='#7f4033'], th 
 [style*='-Regular'] { font-family:GenesisSansHead-Regular,Arial,sans-serif !important; }
 [style*='-Light'] { font-family:GenesisSansHead-Light,Arial,sans-serif !important; }
 [style*='SansText-Regular'] { font-family:GenesisSansText-Regular,Arial,sans-serif !important; }
-.h1[style*='Genesis'], .h1[style*='Genesis'] span { font-size:33px !important; text-shadow:0 0 1px rgba(80,81,81,0.2); }
+.h1[style*='Genesis'], .h1[style*='Genesis'] span { font-size:31px !important; text-shadow:0 0 1px rgba(80,81,81,0.2); }
 .h2[style*='Genesis'], .h2[style*='Genesis'] span { font-size:27px !important; text-shadow:0 0 1px rgba(153,51,51,0.2); }
 .h3[style*='Genesis'], .h3[style*='Genesis'] span { font-size:22px !important; }
 .h4[style*='Genesis'], .h4[style*='Genesis'] span { font-size:16px !important; }
@@ -84,11 +82,11 @@ td[width*='32.5'] { border-top:2px solid #804033; }
 .hide4mobile { display:none !important; }
 .block, .block480 { display:block; }
 img { height:auto !important; }
-td, td span, td a, th, th span, th a { font-size:17px !important; line-height:1.4em !important; }
+td, td span, td a, th, th span, th a { font-size:16px !important; line-height:1.4em !important; }
 #weblink a { font-size:11px !important; }
 .headline, .headline span { line-height:1.1em !important; }
 .h1, .h1 span { font-size:27px !important; line-height:1.1em !important; }
-.h1[style*='Genesis'], .h1[style*='Genesis'] span { font-size:33px !important; line-height:1.1em !important; }
+.h1[style*='Genesis'], .h1[style*='Genesis'] span { font-size:29px !important; }
 .h2, .h2 span { font-size:24px !important; }
 .h2[style*='Genesis'], .h2[style*='Genesis'] span { font-size:25px !important; }
 .h3, .h3 span { font-size:19px !important; }
@@ -144,7 +142,7 @@ td, td span, td a, th, th span, th a { font-size:17px !important; line-height:1.
 .feature-copy .icon { padding:0 0 15px !important; }
 .feature-copy .icon img { margin:0 auto !important; }
 .features th { display:block; width:100% !important; }
-.features th td { text-align:center !important; }
+.features th td.headline { text-align:center !important; }
 #download th td { text-align:center !important; }
 #download .btn img { width:93% !important; max-width:160px !important; }
 #social-media img { width:50px !important; }
@@ -218,9 +216,9 @@ The new Genesis G80 affords you a complimentary subscription to Genesis Connecte
 		<tr><td>
 
 			<!--call to action: .btn explore-->
-			<table role="presentation" align="left" cellpadding="0" cellspacing="0" class="btn" style="width:83px;">
-			<tr><td align="center" style="background-color:#804033;">
-				<a href="http://www.genesismotorsusa.com" target="_blank" style="color:#ffffff;font-family:Arial,sans-serif,'GenesisSansText-Regular';font-size:12px;letter-spacing:0.02em;border:1px solid #804033;padding:7px 0;display:block;">EXPLORE</a>
+			<table role="presentation" align="left" cellpadding="0" cellspacing="0" class="btn" style="width:95px;">
+			<tr><td align="center" style="background-color:#804033;letter-spacing:0.02em;">
+				<a href="http://www.genesismotorsusa.com" target="_blank" style="display:inline-block;padding:7px 12px;color:#ffffff;font-family:Arial,sans-serif,'GenesisSansText-Regular';font-size:12px;border:1px solid #804033;">EXPLORE<span class="arrow" style="font-size:10px;font-family:Arial,sans-serif;">&nbsp;►</span></a>
 			</td></tr>
 			</table>
 
@@ -247,28 +245,18 @@ The new Genesis G80 affords you a complimentary subscription to Genesis Connecte
 	<!--.feature-heading-->
 	<table role="presentation" bgcolor="#e6d9d6" cellpadding="0" cellspacing="0" class="feature-heading" style="width:100%;">
 	<tr>
-		<!--top border to help vertically align web font text-->
-		<td style="width:67.5%;vertical-align:middle;">
 
-			<table role="presentation" align="center" cellpadding="0" cellspacing="0" style="width:87.25%;margin:0 auto;">
-			<tr><td height="58" class="headline" style="color:#001f20;font-family:Arial,sans-serif,'GenesisSansHead-Regular';font-size:17px;line-height:normal;letter-spacing:0.06em;vertical-align:middle;">
-				REMOTE &amp; GUIDANCE&nbsp;FEATURES
-			</td></tr>
-			</table>
-
-		</td>
-		<!--top border to help vertically align web font text-->
-		<td bgcolor="#804033" style="width:32.5%;vertical-align:middle;">
-			
-			<table role="presentation" align="center" cellpadding="0" cellspacing="0" style="width:88%;margin:0 auto;">
-			<tr><td height="58" align="center" class="cta" style="color:#ffffff;font-family:Arial,sans-serif;font-size:12px;line-height:normal;letter-spacing:0.02em;vertical-align:middle;">
-				<a href="http://www.genesismotorsusa.com/owners" target="_blank" style="color:#ffffff;font-family:Arial,sans-serif,'GenesisSansText-Regular';text-decoration:none;">DISCOVER<span class="hide320" style="text-decoration:none;"> MORE</span></a>&nbsp;►
-			</td></tr>
-			</table>
-
-		</td>
-	</tr>
-	</table><!--/.feature-heading-->
+	<!--.feature-heading-->
+	<table role="presentation" cellpadding="0" cellspacing="0" class="feature-heading" style="width:100%;">
+		<tr>
+			<td class="headline" style="width:67.5%;background-color:#e6d9d6;color:#001f20;font-family:Arial,sans-serif,'GenesisSansHead-Regular';font-size:17px;line-height:normal;letter-spacing:0.06em;text-transform:uppercase;">
+					<span style="display:inline-block;padding:18px 30px 17px;">Remote &amp; Guidance Features</span>
+			</td>
+			<td align="center" class="cta" style="width:32.5%;background-color:#804033;letter-spacing:0.02em;text-transform:uppercase;">
+					<a href="http://www.genesismotorsusa.com/owners" target="_blank" style="display:inline-block;padding:20px 43px;color:#ffffff;font-family:Arial,sans-serif,'GenesisSansText-Regular';font-size:12px;border:1px solid #804033;">Discover More<span class="arrow" style="font-size:10px;font-family:Arial,sans-serif;">&nbsp;►</span></a>
+			</td>
+		</tr>
+		</table><!--/.feature-heading-->
 
 	<!--.feature-copy-->
 	<table role="presentation" cellpadding="0" cellspacing="0" class="feature-copy" style="width:100%;">
@@ -337,27 +325,13 @@ The new Genesis G80 affords you a complimentary subscription to Genesis Connecte
 <tr><td class="pad">
 
 	<!--.feature-heading-->
-	<table role="presentation" bgcolor="#e6d9d6" cellpadding="0" cellspacing="0" class="feature-heading" style="width:100%;">
+	<table role="presentation" cellpadding="0" cellspacing="0" class="feature-heading" style="width:100%;">
 	<tr>
-		<!--top border to help vertically align web font text-->
-		<td style="width:67.5%;vertical-align:middle;">
-
-			<table role="presentation" align="center" cellpadding="0" cellspacing="0" style="width:87.25%;margin:0 auto;">
-			<tr><td height="58" class="headline" style="color:#001f20;font-family:Arial,sans-serif,'GenesisSansHead-Regular';font-size:17px;line-height:normal;letter-spacing:0.06em;vertical-align:middle;">
-				CONNECTED CARE&nbsp;FEATURES
-			</td></tr>
-			</table>
-
+		<td class="headline" style="width:67.5%;background-color:#e6d9d6;color:#001f20;font-family:Arial,sans-serif,'GenesisSansHead-Regular';font-size:17px;line-height:normal;letter-spacing:0.06em;text-transform:uppercase;">
+				<span style="display:inline-block;padding:18px 30px 17px;">Connected Care&nbsp;Features</span>
 		</td>
-		<!--top border to help vertically align web font text-->
-		<td bgcolor="#804033" style="width:32.5%;vertical-align:middle;">
-			
-			<table role="presentation" align="center" cellpadding="0" cellspacing="0" style="width:88%;margin:0 auto;">
-			<tr><td height="58" align="center" class="cta" style="color:#ffffff;font-family:Arial,sans-serif;font-size:12px;line-height:normal;letter-spacing:0.02em;vertical-align:middle;">
-				<a href="http://www.genesismotorsusa.com/owners" target="_blank" style="color:#ffffff;font-family:Arial,sans-serif,'GenesisSansText-Regular';text-decoration:none;">DISCOVER<span class="hide320" style="text-decoration:none;"> MORE</span></a>&nbsp;►
-			</td></tr>
-			</table>
-	
+		<td align="center" class="cta" style="width:32.5%;background-color:#804033;letter-spacing:0.02em;text-transform:uppercase;">
+				<a href="http://www.genesismotorsusa.com/owners" target="_blank" style="display:inline-block;padding:20px 43px;color:#ffffff;font-family:Arial,sans-serif,'GenesisSansText-Regular';font-size:12px;border:1px solid #804033;">Discover More<span class="arrow" style="font-size:10px;font-family:Arial,sans-serif;">&nbsp;►</span></a>
 		</td>
 	</tr>
 	</table><!--/.feature-heading-->
@@ -581,9 +555,9 @@ The new Genesis G80 affords you a complimentary subscription to Genesis Connecte
 					<tr><td class="gift-cta" style="padding:0 0 35px;">
 
 						<!--call to action: .btn learn more about echo-->
-						<table role="presentation" align="left" cellpadding="0" cellspacing="0" class="btn" style="width:190px;">
-						<tr><td align="center" style="background-color:#804033;">
-							<a href="https://www.amazon.com/Amazon-Echo-Bluetooth-Speaker-with-WiFi-Alexa/dp/B00X4WHP5E" target="_blank" style="color:#ffffff;font-family:Arial,sans-serif,'GenesisSansText-Regular';font-size:12px;letter-spacing:0.02em;text-decoration:none;border:1px solid #804033;padding:7px 0;display:block;">LEARN MORE ABOUT ECHO</a>
+						<table role="presentation" align="left" cellpadding="0" cellspacing="0" class="btn" style="width:205px;">
+						<tr><td align="center" style="background-color:#804033;letter-spacing:0.02em;">
+							<a href="https://www.amazon.com/Amazon-Echo-Bluetooth-Speaker-with-WiFi-Alexa/dp/B00X4WHP5E" target="_blank" style="display:inline-block;padding:7px 11px;color:#ffffff;font-family:Arial,sans-serif,'GenesisSansText-Regular';font-size:12px;text-decoration:none;border:1px solid #804033;">LEARN MORE ABOUT ECHO<span class="arrow" style="font-size:10px;font-family:Arial,sans-serif;">&nbsp;►</span></a>
 						</td></tr>
 						</table>
 
