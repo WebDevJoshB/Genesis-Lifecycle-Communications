@@ -25,7 +25,7 @@ a:hover { text-decoration:underline !important; }
 #weblink a:hover { text-decoration:underline !important; } /* fix for aol */
 .btn a:link { text-decoration:none !important; }
 .btn a:hover { text-decoration: underline !important; }
-.feature-heading a:link, .feature-heading a:visited {text-decoration:none !important; }
+.feature-heading a:link, .feature-heading a:visited { text-decoration:none !important; }
 .feature-heading a:hover { text-decoration:underline !important; }
 #footer a:link, #footer a:visited { color:#001f20; }
 a.amazon-link:hover { text-decoration:none !important; cursor:text !important; }
@@ -59,14 +59,14 @@ td a[style*='#7f4033'], td a[style*='#7f4033'] span, th a[style*='#7f4033'], th 
 [style*='-Regular'] { font-family:GenesisSansHead-Regular,Arial,sans-serif !important; }
 [style*='-Light'] { font-family:GenesisSansHead-Light,Arial,sans-serif !important; }
 [style*='SansText-Regular'] { font-family:GenesisSansText-Regular,Arial,sans-serif !important; }
-.h1[style*='Genesis'], .h1[style*='Genesis'] span { font-size:33px !important; line-height:1.1em !important; text-shadow:0 0 1px rgba(80,81,81,0.2); }
-.h2[style*='Genesis'], .h2[style*='Genesis'] span { text-shadow:0 0 1px rgba(153,51,51,0.2); }
+.h1[style*='Genesis'], .h1[style*='Genesis'] span { font-size:33px !important; text-shadow:0 0 1px rgba(80,81,81,0.2); }
+.h2[style*='Genesis'], .h2[style*='Genesis'] span { font-size:27px !important; text-shadow:0 0 1px rgba(153,51,51,0.2); }
 .h3[style*='Genesis'], .h3[style*='Genesis'] span { font-size:22px !important; }
 .h4[style*='Genesis'], .h4[style*='Genesis'] span { font-size:16px !important; }
 .h5[style*='Genesis'], .h5[style*='Genesis'] span { font-size:18px !important; text-shadow:0 0 1px rgba(172,55,44,0.1); }
 .btn a[style*='Genesis'] { font-size: 13px !important; }
 .feature-heading .headline[style*='Genesis'] { font-size:18px !important; }
-.feature-heading .cta[style*='Genesis'] { font-size:13px !important; }
+.feature-heading .cta a[style*='Genesis'] { font-size:13px !important; }
 
 /* mimic vertical align for webfont */
 td[width*='67.5'] { border-top:2px solid #e6d9d6; }
@@ -88,7 +88,7 @@ td, td span, td a, th, th span, th a { font-size:17px !important; line-height:1.
 #weblink a { font-size:11px !important; }
 .headline, .headline span { line-height:1.1em !important; }
 .h1, .h1 span { font-size:27px !important; line-height:1.1em !important; }
-.h1[style*='Genesis'], .h1[style*='Genesis'] span { font-size:30px !important; line-height:1.1em !important; }
+.h1[style*='Genesis'], .h1[style*='Genesis'] span { font-size:33px !important; line-height:1.1em !important; }
 .h2, .h2 span { font-size:24px !important; }
 .h2[style*='Genesis'], .h2[style*='Genesis'] span { font-size:25px !important; }
 .h3, .h3 span { font-size:19px !important; }
@@ -182,7 +182,7 @@ The new Genesis G80 affords you a complimentary subscription to Genesis Connecte
 
 <!--#header .wrapper-->
 <table role="presentation" align="center" cellpadding="0" cellspacing="0" id="header" class="wrapper" style="width:640px;margin:0 auto;">
-<tr><td valign="top" background="https://www.joshuablauvelt.com/hyundai/Genesis-Lifecycle-Communications/img/bg-header.jpg" class="background" style="font-size:0;line-height:0;">
+<tr><td valign="top" background="https://www.joshuablauvelt.com/hyundai/Genesis-Lifecycle-Communications/img/bg-header.jpg" class="background">
 <!--[if gte mso 9]>
 	<v:image id="theImage" style="behavior:url(#default#VML);position:absolute;width:640px;height:435px;top:0;left:0;z-index:-1" src="https://www.joshuablauvelt.com/hyundai/Genesis-Lifecycle-Communications/img/bg-header.jpg"/>
 <![endif]-->
@@ -209,7 +209,7 @@ The new Genesis G80 affords you a complimentary subscription to Genesis Connecte
 		<tr><td align="right" id="weblink" style="padding:0 0 10px;font-family:Arial,sans-serif;font-size:10px;line-height:normal;">
            	<a href="%%view_email_url%%" target="_blank" style="color:#858e8e;text-decoration:none;">Web version</a>                                
 		</td></tr>
-		<tr><td class="headline h1" style="padding:0 0 15px;color:#505151;font-family:Arial,sans-serif,'GenesisSansHead-Light';font-size:27px;line-height:32px;letter-spacing:-0.02em;">
+		<tr><td class="headline h1" style="padding:0 0 15px;color:#505151;font-family:Arial,sans-serif,'GenesisSansHead-Light';font-size:28px;line-height:1em;letter-spacing:-0.02em;">
 			WELCOME TO GENESIS CONNECTED&nbsp;SERVICES
 		</td></tr>
 		<tr><td style="padding:0 10px 28px 0;color:#000000;font-family:Arial,sans-serif;font-size:14px;line-height:20px;">
@@ -220,7 +220,7 @@ The new Genesis G80 affords you a complimentary subscription to Genesis Connecte
 			<!--call to action: .btn explore-->
 			<table role="presentation" align="left" cellpadding="0" cellspacing="0" class="btn" style="width:83px;">
 			<tr><td align="center" style="background-color:#804033;">
-				<a href="http://www.genesismotorsusa.com" target="_blank" style="color:#ffffff;font-family:Arial,sans-serif,'GenesisSansText-Regular';font-size:12px;letter-spacing:0.02em;border:1px solid #804033;padding:15px 0;display:block;">EXPLORE</a>
+				<a href="http://www.genesismotorsusa.com" target="_blank" style="color:#ffffff;font-family:Arial,sans-serif,'GenesisSansText-Regular';font-size:12px;letter-spacing:0.02em;border:1px solid #804033;padding:7px 0;display:block;">EXPLORE</a>
 			</td></tr>
 			</table>
 
@@ -261,8 +261,8 @@ The new Genesis G80 affords you a complimentary subscription to Genesis Connecte
 		<td bgcolor="#804033" style="width:32.5%;vertical-align:middle;">
 			
 			<table role="presentation" align="center" cellpadding="0" cellspacing="0" style="width:88%;margin:0 auto;">
-			<tr><td height="58" align="center" class="cta" style="color:#ffffff;font-family:Arial,sans-serif,'GenesisSansText-Regular';font-size:12px;line-height:normal;letter-spacing:0.02em;vertical-align:middle;">
-				<a href="http://www.genesismotorsusa.com/owners" target="_blank" style="color:#ffffff;text-decoration:none;">DISCOVER<span class="hide320" style="text-decoration:none;"> MORE</span></a>&nbsp;►
+			<tr><td height="58" align="center" class="cta" style="color:#ffffff;font-family:Arial,sans-serif;font-size:12px;line-height:normal;letter-spacing:0.02em;vertical-align:middle;">
+				<a href="http://www.genesismotorsusa.com/owners" target="_blank" style="color:#ffffff;font-family:Arial,sans-serif,'GenesisSansText-Regular';text-decoration:none;">DISCOVER<span class="hide320" style="text-decoration:none;"> MORE</span></a>&nbsp;►
 			</td></tr>
 			</table>
 
@@ -353,11 +353,11 @@ The new Genesis G80 affords you a complimentary subscription to Genesis Connecte
 		<td bgcolor="#804033" style="width:32.5%;vertical-align:middle;">
 			
 			<table role="presentation" align="center" cellpadding="0" cellspacing="0" style="width:88%;margin:0 auto;">
-			<tr><td height="58" align="center" class="cta" style="color:#ffffff;font-family:Arial,sans-serif,'GenesisSansText-Regular';font-size:12px;line-height:normal;letter-spacing:0.02em;vertical-align:middle;">
-				<a href="http://www.genesismotorsusa.com/owners" target="_blank" style="color:#ffffff;text-decoration:none;">DISCOVER<span class="hide320" style="text-decoration:none;"> MORE</span></a>&nbsp;►
+			<tr><td height="58" align="center" class="cta" style="color:#ffffff;font-family:Arial,sans-serif;font-size:12px;line-height:normal;letter-spacing:0.02em;vertical-align:middle;">
+				<a href="http://www.genesismotorsusa.com/owners" target="_blank" style="color:#ffffff;font-family:Arial,sans-serif,'GenesisSansText-Regular';text-decoration:none;">DISCOVER<span class="hide320" style="text-decoration:none;"> MORE</span></a>&nbsp;►
 			</td></tr>
 			</table>
-
+	
 		</td>
 	</tr>
 	</table><!--/.feature-heading-->
@@ -515,7 +515,7 @@ The new Genesis G80 affords you a complimentary subscription to Genesis Connecte
 
 		<!--#echo .innerWrap-->
 		<table role="presentation" align="center" cellpadding="0" cellspacing="0" id="echo" class="innerWrap" style="width:91.25%;margin:0 auto;">
-		<tr><td class="headline h2" style="padding:0 0 15px;color:#993333;font-weight:normal;font-family:Arial,sans-serif,'GenesisSansHead-Light';font-size:27px;line-height:1.091em;text-align:left;">
+		<tr><td class="headline h2" style="padding:0 0 15px;color:#993333;font-weight:normal;font-family:Arial,sans-serif,'GenesisSansHead-Light';font-size:25px;line-height:1.091em;">
 			GENESIS OWNERS ECHO THEIR&nbsp;PRAISES
 		</td></tr>
 		<tr><td>
@@ -615,9 +615,9 @@ The new Genesis G80 affords you a complimentary subscription to Genesis Connecte
 
 	<!--#footerWrap-->
 	<table role="presentation" cellpadding="0" cellspacing="0" id="footerWrap" style="width:100%;">
-	<tr><td background="https://www.joshuablauvelt.com/hyundai/Genesis-Lifecycle-Communications/img/bg-footer-470px.jpg" class="background">
+	<tr><td background="https://www.joshuablauvelt.com/hyundai/Genesis-Lifecycle-Communications/img/bg-footer-485px.jpg" class="background">
 	<!--[if gte mso 9]>
-	    <v:image id="theImage" style="behavior:url(#default#VML);position:absolute;width:640px;height:485px;top:0;left:0;z-index:-1" src="https://www.joshuablauvelt.com/hyundai/Genesis-Lifecycle-Communications/img/bg-footer-470px.jpg"/>
+	    <v:image id="theImage" style="behavior:url(#default#VML);position:absolute;width:640px;height:485px;top:0;left:0;z-index:-1" src="https://www.joshuablauvelt.com/hyundai/Genesis-Lifecycle-Communications/img/bg-footer-485px.jpg"/>
   	<![endif]-->
 
 		<!--#footer-images-->
